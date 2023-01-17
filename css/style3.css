@@ -1,0 +1,125 @@
+*{
+    padding:0%;
+    margin:0%;
+}
+html{
+    font-size: 25px;
+    color: white;
+}
+
+nav{
+    display: flex;
+    
+    background: #8360c3;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2ebf91, #8360c3);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2ebf91, #8360c3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    width: 100%;
+   padding-top: 1%;
+   padding-bottom: 1%;
+   
+}
+.title{
+    margin-top:30px;
+    margin-left: 60px;
+    color: blue;
+}
+nav ul{
+    display: flex;
+    list-style-type: none;
+    margin-left: 400px;
+    
+}
+nav ul li{
+    margin:15px;
+}
+nav ul li a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    text-transform: capitalize;
+}
+nav ul li a:hover{
+    color: rgb(47, 0, 255);
+}
+
+section{
+    height: 100vh;
+    width: 100%;
+    color: black;
+    
+}
+
+fieldset{
+    border-width: 10px;
+    border-image: linear-gradient(#3cacf6, #901ddd) 30;
+    border-radius: 25% 10%;
+    height: 500px;
+    width:600px;
+    padding-top: 2%;
+    padding-left: 2%;
+    margin-top: 70px;
+    margin-left: 30%;
+    display: flex;
+    flex-direction: column;
+    
+}
+.form1{
+    width: 200px;
+    height: 50px;
+    font-size: 15px;
+}
+.msg{
+    position: absolute;
+   
+    margin-left: 18%;
+}
+.msg1{
+   margin-top: 8%;
+    width: 300px;
+    height: 200px;
+    font-size: 15px;
+  
+}
+footer{
+    height: 130px;
+    margin-top: 4%;
+    background: #b7afc4;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ccd8d4, #cac4d6);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #c9dad5, #bdb8c9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    display: flex;
+}
+table{
+    padding-left: 1%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    border-spacing: 15px;
+}
+.img3{
+    margin-right: 10px;
+    height: 20px;
+    width: 20px;
+}
+.social{
+    position: absolute;
+    padding-left: 1200px;
+   padding-top: 2%;
+}
+.img2{
+    height: 48px;
+    width: 48px;
+    margin: 10px;
+}
+.img2:hover{
+    transform: scale(1.2);
+}
+.btn{
+    position: absolute;
+    height: 50px;
+    width:150px;
+    margin-top: 380px;
+    margin-left: 400px;
+    border-color: #3cacf6;
+    background-color: #89c7f0;
+}
+.btn:hover{
+    background-color: #3cacf6;
+}

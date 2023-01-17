@@ -1,0 +1,182 @@
+*{
+    padding:0%;
+    margin:0%;
+}
+html{
+    font-size: 25px;
+    color: white;
+}
+header{
+    
+    height: 100vh;
+    width: 100%;
+    background: #8360c3;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2ebf91, #8360c3);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2ebf91, #8360c3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+nav{
+    background: #8360c3;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2ebf91, #8360c3);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2ebf91, #8360c3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    display: flex;
+  
+    
+    width: 100%;
+    
+}
+.title{
+    margin-top:30px;
+    margin-left: 60px;
+    color: blue;
+}
+nav ul{
+    display: flex;
+    list-style-type: none;
+    margin-left: 300px;
+    
+}
+nav ul li{
+    margin:15px;
+}
+nav ul li a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    text-transform: capitalize;
+}
+nav ul li a:hover{
+    color: rgb(47, 0, 255);
+}
+.nom{
+    color: rgb(47, 0, 255);
+    font-size: 40px;
+}
+.name{
+    color: black;
+}
+.txt{
+    display:flex;
+    background-color: white;
+    color: black;
+    width: 1000px;
+    height: 550px;
+    margin-left: 220px;
+    margin-top: 40px;
+    border: 2px solid rgb(255, 255, 255);
+  border-radius: 10px;
+}
+
+.txt1{
+    position: absolute;
+   text-align:left;
+   padding-top: 40px;
+   padding-left: 80px;
+   
+
+
+}
+.np{
+    position: absolute;
+    color:  rgb(47, 0, 255);
+    font-size: 40px;
+    padding-top: 70px;
+    padding-left:80px;
+}
+.txt2{
+    position: absolute;
+    padding-top: 120px;
+    padding-left:80px;
+}
+
+.info{
+    color: rgb(0, 0, 0);
+    position: absolute;
+    padding-top: 200px;
+    padding-left:80px;
+    
+   
+}
+.img1{
+    padding-top: 70px;
+    padding-left: 550px;
+    height: 400px;
+    width: 400px;
+}
+.img3{
+    margin-right: 10px;
+    height: 20px;
+    width: 20px;
+}
+.img2{
+    height: 48px;
+    width: 48px;
+    margin: 10px;
+}
+.img2:hover{
+    transform: scale(1.2);
+}
+.social{
+    position: absolute;
+   padding-left: 80px;
+   padding-top: 450px;
+   
+    
+}
+.title2{
+    color: black;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-left:100px;
+   margin-top: 50px;
+   font-size: 40px;
+   display: flex;
+}
+section{ 
+    display: flex;
+    color: black;
+    padding-left:100px;
+    padding-top: 40px;
+    height: 50vh;
+    width: 100vh;
+   
+}
+.img4{
+    position: absolute;
+    padding-left: 620px;
+    height: 250px;
+    width: 300px;
+}
+.img5{
+    position: absolute;
+    height:250px;
+    width: 300px;
+    padding-left: 940px;
+}
+.img6{
+    padding-top: 200px;
+    padding-left: 600px;
+    height:200px;
+    width: 250px;
+}
+
+.title3{
+    color: blue;
+}
+.video{
+    position: absolute;
+    padding-top:50px;
+}
+.projet{
+    position: absolute;
+    padding-left: 600px;
+}
+.projet-title{
+    padding-left: 450px;
+}
+#matieres{
+    padding-left: 200px;
+    padding-bottom: 40px;
+}
+#title-matieres{
+    padding-left: 175px;
+}

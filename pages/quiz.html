@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HTML Quiz</title>
+  <link rel="stylesheet" type="text/css" href="../css/style2.css">
+</head>
+<body>
+  <nav>
+    <h1><span class="title">L</span>ina.</h1>
+    <ul id="menu">
+        <li><a href=acceuil.html#about>À propos de moi</a></li>
+        <li><a href="../pages/competence.html#competences">Compétences</a></li>
+        <li><a href="../pages/Parcoursacademique.html#Parcoursacademique">Parcours academiques</a></li>
+        <li><a href="../pages/matieres.html#title-matieres">Matieres</a></li>
+        <li><a href="../pages/quiz.html">QUIZ</a></li>
+        <li><a href="../pages/contact.html">contact</a></li>
+        <li><a href="../pages/iit.html" target="_blank">IIT</a></li>
+
+    </ul>
+</nav>
+
+  <h1 id="quiz">Quiz</h1><br>
+  <div id="quiz">
+    <div class="question">
+      <p>Quel est le nom de la balise utilisée pour mettre en gras du texte ?</p><br>
+      <input type="radio" name="answer1" value="a"> <code>&lt;strong&gt;</code>
+      <br>
+      <input type="radio" name="answer1" value="b"> <code>&lt;b&gt;</code>
+      <br>
+      <input type="radio" name="answer1" value="c"> <code>&lt;i&gt;</code>
+    </div>
+    <div class="question">
+      <p>Quel est le nom de la balise utilisée pour créer un lien hypertexte ?</p><br>
+      <input type="radio" name="answer2" value="a"> <code>&lt;link&gt;</code>
+      <br>
+      <input type="radio" name="answer2" value="b"> <code>&lt;a&gt;</code>
+      <br>
+      <input type="radio" name="answer2" value="c"> <code>&lt;href&gt;</code>
+    </div>
+    <div class="question">
+      <p>Quelle est la balise utilisée pour créer une liste à puces ?</p><br>
+      <input type="radio" name="answer3" value="a"> <code>&lt;ol&gt;</code>
+      <br>
+      <input type="radio" name="answer3" value="b"> <code>&lt;ul&gt;</code>
+      <br>
+      <input type="radio" name="answer3" value="c"> <code>&lt;li&gt;</code>
+    </div>
+    <div class="question">
+        <p>Quel est le nom de la balise utilisée pour créer un paragraphe ?</p><br>
+        <input type="radio" name="answer4" value="a"> <code>&lt;text&gt;</code>
+        <br>
+        <input type="radio" name="answer4" value="b"> <code>&lt;p&gt;</code>
+        <br>
+        <input type="radio" name="answer4" value="c"> <code>&lt;para&gt;</code>
+      </div>
+      <div class="question">
+        <p>Quelle est la balise utilisée pour créer une image ?</p><br>
+        <input type="radio" name="answer5" value="a"> <code>&lt;img&gt;</code>
+        <br>
+        <input type="radio" name="answer5" value="b"> <code>&lt;picture&gt;</code>
+        <br>
+        <input type="radio" name="answer5" value="c"> <code>&lt;graphics&gt;</code>
+      </div>
+      <div class="question">
+        <p>Quelle est la balise utilisée pour créer un titre de niveau 1 ?</p><br>
+        <input type="radio" name="answer6" value="a"> <code>&lt;h1&gt;</code>
+        <br>
+        <input type="radio" name="answer6" value="b"> <code>&lt;title&gt;</code>
+        <br>
+        <input type="radio" name="answer6" value="c"> <code>&lt;header&gt;</code>
+      </div>
+      <div class="question">
+        <p>Quelle est la balise utilisée pour créer un bouton ?</p><br>
+        <input type="radio" name="answer7" value="a"> <code>&lt;click&gt;</code>
+        <br>
+        <input type="radio" name="answer7" value="b"> <code>&lt;button&gt;</code>
+        <br>
+        <input type="radio" name="answer7" value="c"> <code>&lt;submit&gt;</code>
+      </div>
+      <div class="question">
+        <p>Quelle est la balise utilisée pour créer un formulaire ?</p><br>
+        <input type="radio" name="answer8" value="a"> <code>&lt;form&gt;</code>
+        <br>
+        <input type="radio" name="answer8" value="b"> <code>&lt;input&gt;</code>
+        <br>
+        <input type="radio" name="answer8" value="c"> <code>&lt;submit&gt;</code>
+      </div>
+      <div class="question">
+        <p>Quelle est la balise utilisée pour créer un tableau ?</p><br>
+        <input type="radio" name="answer9" value="a"> <code>&lt;table&gt;</code>
+        <br>
+        <input type="radio" name="answer9" value="b"> <code>&lt;tr&gt;</code>
+        <br>
+        <input type="radio" name="answer9" value="c"> <code>&lt;td&gt;</code>
+      </div>
+      <div class="question">
+        <p>Quelle est la balise utilisée pour créer un saut de ligne ?</p><br>
+        <input type="radio" name="answer10" value="a"> <code>&lt;br&gt;</code>
+        <br>
+        <input type="radio" name="answer10" value="b"> <code>&lt;linebreak&gt;</code>
+        <br>
+        <input type="radio" name="answer10" value="c"> <code>&lt;newline&gt;</code>
+      </div>
+  
+  
+  </div>
+  <br>
+  <input type="button" value="Envoyer" onclick="checkAnswers()">
+  <br>
+  <br>
+  <p id="result"></p>
+  <script>
+    function checkAnswers() {
+      var correct = 0;
+      var answer1 = document.querySelector('input[name="answer1"]:checked');
+      if (answer1 && answer1.value == "b") {
+        correct++;
+      }
+      var answer2 = document.querySelector('input[name="answer2"]:checked');
+      if (answer2 && answer2.value == "b") {
+        correct++;
+      }
+      var answer3 = document.querySelector('input[name="answer3"]:checked');
+      if (answer3 && answer3.value == "b") {
+        correct++;
+      }
+      var answer4 = document.querySelector('input[name="answer4"]:checked');
+    if (answer4 && answer4.value == "b") {
+        correct++;
+    }
+    var answer5 = document.querySelector('input[name="answer5"]:checked');
+    if (answer5 && answer5.value == "a") {
+        correct++;
+    }
+    var answer6 = document.querySelector('input[name="answer6"]:checked');
+    if (answer6 && answer6.value == "a") {
+        correct++;
+    }
+    var answer7 = document.querySelector('input[name="answer7"]:checked');
+    if (answer7 && answer7.value == "b") {
+        correct++;
+    }
+    var answer8 = document.querySelector('input[name="answer8"]:checked');
+    if (answer8 && answer8.value == "a") {
+        correct++;
+    }
+    var answer9 = document.querySelector('input[name="answer9"]:checked');
+    if (answer9 && answer9.value == "a") {
+        correct++;
+    }
+    var answer10 = document.querySelector('input[name="answer10"]:checked');
+    if (answer10 && answer10.value == "a") {
+        correct++;
+    }
+    if (correct < 5) {
+    document.getElementById("result").classList.add("fail");
+  } else {
+    document.getElementById("result").classList.remove("fail");
+  }
+
+
+    document.getElementById("result").innerHTML = "Correct: " + correct + "/10";
+    }
+  </script>
+  <footer>
+    <nav >
+        
+        <ul id="menu">
+            <li><a href=#about>À propos de moi</a></li>
+            <li><a href="competence.html#competences">Compétences</a></li>
+            <li><a href="../pages/Parcoursacademique.html#Parcoursacademique">Parcours académiques</a></li>
+            <li><a href="../pages/matieres.html#title-matieres">Matiéres</a></li>
+            <li><a href="../pages/quiz.html">QUIZ</a></li>
+            <li><a href="../pages/contact.html">contact</a></li>
+            <li><a href="../pages/iit.html">IIT</a></li>
+
+        </ul>
+    </nav>
+</footer>
+</body>
+</html>
